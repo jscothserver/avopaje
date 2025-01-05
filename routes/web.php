@@ -9,6 +9,7 @@ use App\Http\Controllers\TarimaController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ReferenteController;
 use App\Http\Controllers\DetalletarimaController;
+use App\Http\Controllers\DocumentoController;
 
 Route::get('/', function () {
     return redirect('login');
@@ -29,4 +30,5 @@ Route::middleware([
     Route::resource('tarimas', TarimaController::class)->except('destroy');
     Route::resource('cajas', BoxController::class)->except('destroy');
     Route::resource('detalletarimas', DetalletarimaController::class)->except('destroy');
+    Route::resource('documentos', DocumentoController::class)->except('destroy');
 });

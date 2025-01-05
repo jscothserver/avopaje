@@ -14,7 +14,7 @@
                         <a href="{{ route('cajas.create') }}" class="px-4 py-2 font-bold bg-blue-500 rounded hover:bg-blue-700">Crear nueva caja</a>
                         </x-button>
                     </div>
-                    <table class="table hover:table-fixed">
+                    <table class="table w-full hover:table-fixed">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
